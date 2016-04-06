@@ -119,12 +119,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--<div class="select">
         <label for="audioSource">Audio source: </label><select id="audioSource"></select>
     </div>-->
-    <div id="select">
+    <div class="select">
         <label for="videoSource">Video source: </label><select id="videoSource"></select>
     </div>
     <script>
         'use strict';
-            var videoElement = document.querySelector('video');
+        var videoElement = document.querySelector('video');
        // var audioSelect = document.querySelector('select#audioSource');
         var videoSelect = document.querySelector('select#videoSource');
         navigator.getUserMedia = navigator.getUserMedia ||
@@ -152,7 +152,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         typeof MediaStreamTrack.getSources === 'undefined') {
         console.log("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
         alert("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
-                  document.getElementById("select").style.display= "none";
     } else {
         alert(" Twoja przegladarka teraz w pasku wprowadzania linków prosi o dostęp do kamery.\n
               Twoj obraz nigdzie nie jest przesylany. \n
