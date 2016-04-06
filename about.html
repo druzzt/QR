@@ -7,89 +7,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-    <script>/*! modernizr 3.3.1 (Custom Build) | MIT *
-             * http://modernizr.com/download/?-capture !*/
-    ! function(e, n, t) {
-        function o(e, n) {
-            return typeof e === n
-        }
-        
-        function s() {
-            var e, n, t, s, a, r, u;
-            for (var l in i)
-            if (i.hasOwnProperty(l)) {
-                if (e = [], n = i[l], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length))
-                for (t = 0; t < n.options.aliases.length; t++) e.push(n.options.aliases[t].toLowerCase());
-                for (s = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++) r = e[a], u = r.split("."), 1 === u.length ? Modernizr[u[0]] = s : (!Modernizr[u[0]] || Modernizr[u[0]] instanceof Boolean || (Modernizr[u[0]] = new Boolean(Modernizr[u[0]])), Modernizr[u[0]][u[1]] = s), f.push((s ? "" : "no-") + u.join("-"))
-            }
-        }
-        
-        function a() {
-            return "function" != typeof n.createElement ? n.createElement(arguments[0]) : l ? n.createElementNS.call(n, "http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments)
-        }
-        var i = [],
-        r = {
-            _version: "3.3.1",
-            _config: {
-                classPrefix: "",
-                enableClasses: !0,
-                enableJSClass: !0,
-                usePrefixes: !0
-            },
-            _q: [],
-            on: function(e, n) {
-                var t = this;
-                setTimeout(function() {
-                           n(t[e])
-                           }, 0)
-            },
-            addTest: function(e, n, t) {
-                i.push({
-                       name: e,
-                       fn: n,
-                       options: t
-                       })
-            },
-            addAsyncTest: function(e) {
-                i.push({
-                       name: null,
-                       fn: e
-                       })
-            }
-        },
-        Modernizr = function() {};
-        Modernizr.prototype = r, Modernizr = new Modernizr;
-        var f = [],
-        u = n.documentElement,
-        l = "svg" === u.nodeName.toLowerCase();
-        Modernizr.addTest("capture", "capture" in a("input")), s(), delete r.addTest, delete r.addAsyncTest;
-        for (var c = 0; c < Modernizr._q.length; c++) Modernizr._q[c]();
-        e.Modernizr = Modernizr
-    }(window, document); </script>
     <script type="text/javascript">
         var host = "druzzt.github.io/QR";
         if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
-        </script>
+    </script>
 <title>Cross-Device optic data channel. HOMEPAGE @ arkadiuszlewandowski</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 100); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 100); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); }
+</script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!-- menu -->
 <link href="css/component.css" rel="stylesheet" type="text/css"  />
-<!-- //menu -->
 <!--webfont-->
-
 </head>
-
 <body class="cbp-spmenu-push">
-
 <script src="js/jquery.min.js"></script>
 	<div class="header">
 	<div class="container">
@@ -115,8 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 			</nav>
 			<div class="main buttonset">	
-						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-				<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+                <button id="showRightPush"><img src="images/menu.png" alt=""/></button>
 			</div>
 					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 					<script src="js/classie.js"></script>
@@ -138,11 +76,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								}
 							}
 						</script>
-						<!-- /script-for-menu -->
 		</div>	
 		<div class="clearfix"> </div>
 	</div>	
 	</div>
+    <!-- VIDEO CONTAINER FOR QR RECORDING -->
+    <video autoplay></video>
+    <script>
+        function hasGetUserMedia() {
+            return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
+                      navigator.mozGetUserMedia || navigator.msGetUserMedia);
+        }
+    
+        if (hasGetUserMedia()) {
+            console.log("Supporting getUserMedia");
+        } else {
+            console.log("getUserMedia() is not supported in this browser");
+        }
+        hasGetUserMedia();
+    </script>
+    
 <!-- banner -->
 	<div class="banner">
 		<div class="container">
@@ -153,30 +106,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <br>
                 <img src="images/rozmaryn.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
                 <img src="images/codes.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-                    
                 </div>
 		</div>
 	</div>
-    <video autoplay></video>
     
-    
-    
-    
-    
-    <script>
-        function hasGetUserMedia() {
-        return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
-        navigator.mozGetUserMedia || navigator.msGetUserMedia);
-        }
-
-        if (hasGetUserMedia()) {
-            console.log("supports getUserMedia! :D");
-        } else {
-        console.log("getUserMedia() is not supported in your browser");
-        }
-
-        hasGetUserMedia();
-    </script>
     <!--<div class="select">
         <label for="audioSource">Audio source: </label><select id="audioSource"></select>
     </div>-->
@@ -185,14 +118,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <script>
         'use strict';
-        
         var videoElement = document.querySelector('video');
        // var audioSelect = document.querySelector('select#audioSource');
         var videoSelect = document.querySelector('select#videoSource');
-        
         navigator.getUserMedia = navigator.getUserMedia ||
         navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-        
         function gotSources(sourceInfos) {
             for (var i = 0; i !== sourceInfos.length; ++i) {
                 var sourceInfo = sourceInfos[i];
@@ -217,7 +147,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         console.log("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
         alert("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
     } else {
-        alert(" Twoja przegladarka teraz w pasku wprowadzania linków prosi o dostęp do kamery.\n Twoj obraz nigdzie nie jest przesylany. \n Sluzy on jedynie do przetwarzania QR kodow wewnatrz Twojej przegladarki.");
+        alert(" Twoja przegladarka teraz w pasku wprowadzania linków prosi o dostęp do kamery.\n
+              Twoj obraz nigdzie nie jest przesylany. \n
+              Sluzy on jedynie do przetwarzania QR kodow wewnatrz Twojej przegladarki.");
         MediaStreamTrack.getSources(gotSources);
     }
     
@@ -240,9 +172,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         var videoSource = videoSelect.value;
         var constraints = {
             //audio: {
-              //  optional: [{
-                //           sourceId: audioSource
-                  //         }]
+            //  optional: [{
+            //           sourceId: audioSource
+            //         }]
             //},
             video: {
                 optional: [{
