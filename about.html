@@ -81,8 +81,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>	
 	</div>
     <!-- VIDEO CONTAINER FOR QR RECORDING -->
+    <div id="vid">
     <video autoplay></video>
+    </div>
     <script>
+        function hideDisplay() {
+            document.getElementById("vid").style.display = "none";
+        }
         function hasGetUserMedia() {
             return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
                       navigator.mozGetUserMedia || navigator.msGetUserMedia);
@@ -92,6 +97,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             console.log("Supporting getUserMedia");
         } else {
             console.log("getUserMedia() is not supported in this browser");
+            hideDisplay();
         }
         hasGetUserMedia();
     </script>
