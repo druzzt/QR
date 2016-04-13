@@ -94,10 +94,26 @@ if (loc.indexOf('http://')==0){
                     <h1>Work progress site.</h1>
                     <p>Optic transmission data channel for mobile devices: <br>
                     CAPACITY MAXIMIZATION.</p>
+                    <div id="chat">
                     <iframe src="https://www.chatcrypt.com/iframe.php" width="468" height="60" frameborder="0"></iframe>
+                    </div>
 				</div>
 			</div>
         </div>
+        <script>
+            function hideDisplay() {
+                document.getElementById("chat").style.display = "none";
+            }
+            function detectmob() {
+                if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+                    hideDisplay();
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            detectmob();
+        </script>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- -->
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script><!-- -->
