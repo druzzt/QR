@@ -134,8 +134,11 @@ height: 100%;
                 if(typeof window.orientation !== 'undefined')
                 /*if(window.innerWidth <= 800 && window.innerHeight <= 600)*/ {
                     hideDisplay();
-                    if(typeof window.orientation == 'vertical'){
-                    askToRotate();
+                    var ua = navigator.userAgent.toLowerCase();
+                    if(ua.indexOf("android") > -1 && ( window.orientation == 90 || window.orientation == -90)){
+                        askToRotate();
+                    }else if(ua.indexOf("android") == -1 && (window.orientation == 0 || window.orientation == 180)){
+                        askToRotate();
                     }
                     return true;
                 } else {
