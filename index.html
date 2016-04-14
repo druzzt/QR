@@ -33,12 +33,10 @@ max-height: 360px;
 width: 50%;
 height: 100%;
 }
-
 #inner{
 height: 0px;
 padding-bottom: 56.25%;
 }
-
 #chatalt{
 width: 50%;
 height: 100%;
@@ -145,13 +143,14 @@ height: 100%;
                     return false;
                 }
             }
-        function askToRotate(){
-            alert("Please rotate your phone and refresh the page");
-            console.log("Please rotate your phone");
-        }
+            function askToRotate(){
+                alert("Please rotate your phone and refresh the page");
+                console.log("Please rotate your phone");
+            }
             detectmob();
+            $('body').css('top', -(document.documentElement.scrollTop) + 'px')
+            .addClass('noscroll');
         </script>
-        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- -->
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script><!-- -->
         <script src="js/jquery.vide.min.js"></script><!-- -->
