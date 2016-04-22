@@ -120,7 +120,7 @@ a.navbar-brand span{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:400px;
+	min-height:100px;
 }
 .banner h3{
 	text-transform:capitalize;
