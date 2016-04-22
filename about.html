@@ -271,29 +271,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div id="vid">
     <video autoplay></video>
 </div>
-</div>
-<script>
-    function hideDisplay() {
-        document.getElementById("vid").style.display = "none";
-    }
-function hasGetUserMedia() {
-    return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
-              navigator.mozGetUserMedia || navigator.msGetUserMedia);
-}
 
-if (hasGetUserMedia()) {
-    console.log("Supporting getUserMedia");
-} else {
-    console.log("getUserMedia() is not supported in this browser");
-    hideDisplay();
-}
-hasGetUserMedia();
-    </script>
+
 <div id="selector">
     <div class="select">
         <label for="videoSource">Video source: </label><select id="videoSource"></select>
     </div>
 </div>
+</div>
+    <script>
+        function hideDisplay() {
+            document.getElementById("vid").style.display = "none";
+        }
+    function hasGetUserMedia() {
+        return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
+                  navigator.mozGetUserMedia || navigator.msGetUserMedia);
+    }
+    
+    if (hasGetUserMedia()) {
+        console.log("Supporting getUserMedia");
+    } else {
+        console.log("getUserMedia() is not supported in this browser");
+        hideDisplay();
+    }
+    hasGetUserMedia();
+        </script>
 <script>
     'use strict';
     var videoElement = document.querySelector('video');
