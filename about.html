@@ -88,27 +88,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="clearfix"> </div>
 	</div>	
 	</div>
-    <!-- VIDEO CONTAINER FOR QR RECORDING -->
-    <div id="vid">
-    <video autoplay></video>
-    </div>
-    <script>
-        function hideDisplay() {
-            document.getElementById("vid").style.display = "none";
-        }
-        function hasGetUserMedia() {
-            return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
-                      navigator.mozGetUserMedia || navigator.msGetUserMedia);
-        }
-    
-        if (hasGetUserMedia()) {
-            console.log("Supporting getUserMedia");
-        } else {
-            console.log("getUserMedia() is not supported in this browser");
-            hideDisplay();
-        }
-        hasGetUserMedia();
-    </script>
+   
     
 <!-- banner -->
 	<div class="banner">
@@ -287,6 +267,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div> -->
 <!-- //important -->
 <!-- footer -->
+<!-- VIDEO CONTAINER FOR QR RECORDING -->
+<div id="vid">
+    <video autoplay></video>
+</div>
+<script>
+    function hideDisplay() {
+        document.getElementById("vid").style.display = "none";
+    }
+function hasGetUserMedia() {
+    return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
+              navigator.mozGetUserMedia || navigator.msGetUserMedia);
+}
+
+if (hasGetUserMedia()) {
+    console.log("Supporting getUserMedia");
+} else {
+    console.log("getUserMedia() is not supported in this browser");
+    hideDisplay();
+}
+hasGetUserMedia();
+    </script>
 <div id="selector">
     <div class="select">
         <label for="videoSource">Video source: </label><select id="videoSource"></select>
