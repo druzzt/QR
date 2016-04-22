@@ -27,9 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     addEventListener("load", function() { setTimeout(hideURLbar, 100); }, false);
     function hideURLbar(){ window.scrollTo(0,1); }
 </script>
-<audio controls autoplay>
-        <source src="thundersM.mp3" type="audio/mpeg">
-</audio>
+
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
@@ -129,11 +127,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--<div class="select">
         <label for="audioSource">Audio source: </label><select id="audioSource"></select>
     </div>-->
-    <div id="selector">
-        <div class="select">
-            <label for="videoSource">Video source: </label><select id="videoSource"></select>
-        </div>
-    </div>
+    
     <script>
         'use strict';
         var videoElement = document.querySelector('video');
@@ -366,11 +360,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div> -->
 <!-- //important -->
 <!-- footer -->
+<div id="selector">
+    <div class="select">
+        <label for="videoSource">Video source: </label><select id="videoSource"></select>
+    </div>
+</div>
 	<div class="footer">
 		<div class="container">
 			<p>&copy;All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
 		</div>
 	</div>
+    <audio controls autoplay>
+        <source src="thundersM.mp3" type="audio/mpeg">
+    </audio>
 <!-- //footer -->
 </body>
 </html>
