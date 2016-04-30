@@ -330,7 +330,7 @@ if (typeof MediaStreamTrack === 'undefined' ||
     alert("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
     document.getElementById("selector").style.display= "none";
 } else {
-    alert(" Twoja przegladarka teraz w pasku wprowadzania linków prosi o dostęp do kamery.\n Twoj obraz nigdzie nie jest przesylany. \n Sluzy on jedynie do przetwarzania QR kodow wewnatrz Twojej przegladarki.");
+    alert(" Twoja przegladarka prosi teraz o dostęp do kamery (w pasku wprowadzania linków).\n Twoj obraz nigdzie nie jest przesylany. \n Sluzy on jedynie do przetwarzania QR kodow wewnatrz Twojej przegladarki.");
     MediaStreamTrack.getSources(gotSources);
 }
 
