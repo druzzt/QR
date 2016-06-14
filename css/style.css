@@ -102,14 +102,14 @@ a.navbar-brand{
     padding: 35px 0 0;
     font-size: 3em;
     line-height: 20px;
-    color: #010005 !important;
+    color: #407F8E !important;
 }
 a.navbar-brand span{
 	color:#fff;
 	font-size:14px;
 }
 .top-nav-bottom a.active{
-	background:#010005;
+	background:#407F8E;
 }
 /*-- //top-nav --*/
 /*-- banner --*/
