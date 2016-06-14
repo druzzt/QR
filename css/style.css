@@ -102,7 +102,7 @@ a.navbar-brand{
     padding: 35px 0 0;
     font-size: 3em;
     line-height: 20px;
-    color: #407F8E !important;
+    color: #010005 !important;
 }
 a.navbar-brand span{
 	color:#fff;
@@ -126,7 +126,7 @@ a.navbar-brand span{
 	text-transform:capitalize;
 	font-size:2em;
 	margin:5em auto 0;
-	color:#010005;
+	color:#fff;
 	text-align:center;
 	width:80%;
 	font-weight: 600;
@@ -142,7 +142,7 @@ a.navbar-brand span{
 }
 .banner-bottom h3{
 	text-align:center;
-	color:#010005;
+	color:#407F8E;
 	font-size:2em;
 	margin:0;
 }
@@ -182,7 +182,7 @@ p.us{
 }
 .more a{
 	padding:10px 20px;
-	background:#010005;
+	background:#414141;
 	color:#fff;
 	font-size:14px;
 	text-decoration:none;
