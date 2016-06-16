@@ -38,6 +38,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body class="cbp-spmenu-push">
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.qrcodes.js"></script>
+<script src="js/qrcode.js"></script>
 	<div class="header">
 	<div class="container">
         <div class="navbar-header">
@@ -101,6 +103,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <img src="images/rozmaryn.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
                 <img src="images/codes.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
                 </div>
+                <div id="test1"></div>
+                <div id="test2"></div></br>
+                <div id="test3"></div>
+                <div id="test4"></div></br>
+                <script>
+	                $(document).ready(function() {
+				    $('#test1').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
+				});
+	                $(document).ready(function() {
+				    $('#test2').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
+				});
+	                $(document).ready(function() {
+				    $('#test3').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
+				});
+	                $(document).ready(function() {
+				    $('#test4').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
+				});
+                </script>
 		</div>
 	
     
