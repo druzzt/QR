@@ -33,9 +33,7 @@
 
 			// draw in the canvas
 			for( var row = 0; row < qrcode.getModuleCount(); row++ ){
-				row=row%4;
 				for( var col = 0; col < qrcode.getModuleCount(); col++ ){
-					col=col%4;
 					ctx.fillStyle = qrcode.isDark(row, col) ? "#000000" : "#ffffff";
 					ctx.fillRect( col*tileW, row*tileH, tileW, tileH );  
 				}	
