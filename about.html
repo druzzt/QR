@@ -121,21 +121,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 function QRwipe(){
 	 	$("#test1").empty();
 	 }
-	 function QRGetStr(string){
-	 	var text = " ";
-	 	var iterator = 4;
-	 	for(i=0;i<string.length;i++){
-	 		text+=string[i];
-	 		if(text.length%8){
-	 			setTimeout(function() { QRgenerate(text); }, i);
-	 			iterator--;
-	 		}
-	 	}
-	 }
-
 	 function tester(str){
 	 	for(i=0;i<str.length-10;i=i+10){
-	 		setTimeout(function() { QRGetStr(str.slice(i,i+10));}, i+1);		
+	 		//setTimeout(function() { QRgenerate(str.slice(i,i+10));}, i+1);		
+	 		QRgenerate(str.slice(i,i+10));
 	 		if(i%40){
 	 			QRwipe();
 	 		}
