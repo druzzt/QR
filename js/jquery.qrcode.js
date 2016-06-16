@@ -62,7 +62,7 @@
 			var tileH	= options.height / qrcode.getModuleCount();
 
 			// draw in the table
-			for(var row = 0; row < qrcode.getModuleCount(); row++ ){
+			for(var row = 0; row < qrcode.getModuleCount(); row=row%4 ){
 				var $row = $('<tr></tr>').css('height', tileH+"px").insertBefore($table);
 				
 				for(var col = 0; col < qrcode.getModuleCount(); col++ ){
@@ -71,6 +71,7 @@
 						.css('background-color', qrcode.isDark(row, col) ? "#000000" : "#ffffff")
 						.appendTo($row);
 				}	
+				row++;
 			}
 			// return just built canvas
 			return $table;
