@@ -97,17 +97,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<h3>Testing spot</h3>
                 <div class="qrchannel">
-                <img src="images/qrs.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-                <img src="images/wyobraznia.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-                <br>
-                <img src="images/rozmaryn.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-                <img src="images/codes.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+	                <img src="images/qrs.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+	                <img src="images/wyobraznia.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
+	                <img src="images/rozmaryn.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+	                <img src="images/codes.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
                 </div>
-                <div id="test1"></div>
-                <div id="test2"></div></br>
-                <div id="test3"></div>
-                <div id="test4"></div></br>
-                <script>
+
+                <div class="jqrcode">
+	                <div id="test1"></div>
+	                <div id="test2"></div></br>
+	                <div id="test3"></div>
+	                <div id="test4"></div></br>
+            	</div>
+		</div>
+	</div>
+	 <script>
 	                $(document).ready(function() {
 				    $('#test1').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
 				});
@@ -120,9 +124,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	                $(document).ready(function() {
 				    $('#test4').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
 				});
-                </script>
-		</div>
-	
+	</script>
     
     <!--<div class="select">
         <label for="audioSource">Audio source: </label><select id="audioSource"></select>
