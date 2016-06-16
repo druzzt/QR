@@ -135,10 +135,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 			iterator=4;
 	 		}
 	 	}
-	 	
 	 }
 
-	 setTimeout(function() { QRGetStr("iqwueioqwirjewfnshwqoiej392ijrleknfjlshqpeq2owdjnalfnowqijqdlkafnwejlkhjqdwoidhncajlsndqowiejqwdklansdadqiwoldknasmdnhwdlanda");}, 2000);
+	 function tester(str){
+	 	for(i=0;i<str.length;i=i+10){
+	 		setTimeout(function() { QRGetStr(str.slice(i,i+10));}, i+1);		
+	 	}
+	 }
+	 
+	 tester("1234567890abcdefghij0987654321zxcvbnmlkj1234567890abcdefghij0987654321zxcvbnmlkj1234567890abcdefghij0987654321zxcvbnmlkj1234567890abcdefghij0987654321zxcvbnmlkj")
 	 
 	 /*
 	 setTimeout(function() { QRgenerate("123435234423431423423"); }, 1000);
