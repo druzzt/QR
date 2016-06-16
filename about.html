@@ -123,13 +123,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 }
 	 function QRGetStr(string){
 	 	var text = " ";
+	 	var iterator = 0;
 	 	for(i=0;i<string.length;i++){
 	 		text+=string[i];
 	 		if(text.length%8){
 	 			setTimeout(function() { QRgenerate(text); }, i);
 	 		}
+	 		if(iterator%4*8){
+	 			setTimeout(function() { QRwipe(); }, 100);
+	 		}
+
+	 		iterator++;
 	 	}
-	 	setTimeout(function() { QRwipe(); }, 1900);
+	 	
 	 }
 
 	 setTimeout(function() { QRGetStr("iqwueioqwirjewfnshwqoiej392ijrleknfjlshqpeq2owdjnalfnowqijqdlkafnwejlkhjqdwoidhncajlsndqowiejqwdklansdadqiwoldknasmdnhwdlanda");}, 2000);
