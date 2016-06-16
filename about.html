@@ -118,10 +118,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    $('#test1').qrcode({width: 400,height: 400, text: string});
 				});
 	 }
+	 function QRwipe(){
+	 	$("#test1").empty();
+	 }
 	 setTimeout(function() { QRgenerate("123435234423431423423"); }, 2000);
 	 setTimeout(function() { QRgenerate("1234352"); }, 4000);
 	 setTimeout(function() { QRgenerate("4423431423423"); }, 6000);
 	 setTimeout(function() { QRgenerate("123435234423431423423dsadfdksfsdnfjksdfnkjsdfhkjshdasoiqwjkldas"); }, 8000);
+	 setTimeout(function() { QRwipe(); }, 9000);
 	</script>
     </div>
     <!--<div class="select">
