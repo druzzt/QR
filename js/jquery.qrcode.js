@@ -33,6 +33,7 @@
 
 			// draw in the canvas
 			for( var row = 0; row < qrcode.getModuleCount(); row++ ){
+				console.log(row+"|");
 				for( var col = 0; col < qrcode.getModuleCount(); col++ ){
 					ctx.fillStyle = qrcode.isDark(row, col) ? "#000000" : "#ffffff";
 					ctx.fillRect( col*tileW, row*tileH, tileW, tileH );  
@@ -64,7 +65,7 @@
 			// draw in the table
 			for(var row = 0; row < qrcode.getModuleCount(); row++ ){
 				var $row = $('<tr></tr>').css('height', tileH+"px").insertBefore($table);
-				console.log(row);
+				
 				for(var col = 0; col < qrcode.getModuleCount(); col++ ){
 					$('<td></td>')
 						.css('width', tileW+"px")
