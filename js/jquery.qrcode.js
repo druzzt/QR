@@ -63,7 +63,7 @@
 
 			// draw in the table
 			for(var row = 0; row < qrcode.getModuleCount(); row++ ){
-				var $row = $('<tr></tr>').css('height', tileH+"px").appendTo($table);
+				var $row = $('<tr></tr>').css('height', tileH+"px").insertBefore($table);
 				
 				for(var col = 0; col < qrcode.getModuleCount(); col++ ){
 					$('<td></td>')
