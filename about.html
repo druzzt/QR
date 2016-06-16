@@ -105,25 +105,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                 <div class="jqrcode">
 	                <div id="test1"></div>
-	                <div id="test2"></div></br>
+	                <!--<div id="test2"></div></br>
 	                <div id="test3"></div>
-	                <div id="test4"></div></br>
+	                <div id="test4"></div></br>-->
             	</div>
 		</div>
 
 	 <script>
+
+	 QRgenerate(var string){
 	                $(document).ready(function() {
-				    $('#test1').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
+				    $('#test1').qrcode({width: 400,height: 400, text: string});
 				});
-	                $(document).ready(function() {
-				    $('#test2').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
-				});
-	                $(document).ready(function() {
-				    $('#test3').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
-				});
-	                $(document).ready(function() {
-				    $('#test4').qrcode({width: 400,height: 400, text: "231231231231243432432432423432432j432kj4j32k432k4n32kj4j32kb4b234bk23j4b23jkb43k24n32j4kj32n4kj32b4k32b43k2b4nkj324n23j423"});
-				});
+	 }
+	 setTimeout(function() { QRgenerate("123435234423431423423"); }, 2000);
+	 setTimeout(function() { QRgenerate("1234352"); }, 4000);
+	 setTimeout(function() { QRgenerate("4423431423423"); }, 6000);
+	 setTimeout(function() { QRgenerate("123435234423431423423dsadfdksfsdnfjksdfnkjsdfhkjshdasoiqwjkldas"); }, 8000);
 	</script>
     </div>
     <!--<div class="select">
