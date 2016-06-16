@@ -96,50 +96,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="banner">
 		<div class="container">
 			<h3>Testing spot</h3>
+                <!--
                 <div class="qrchannel">
 	                <img src="images/qrs.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
 	                <img src="images/wyobraznia.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
 	                <img src="images/rozmaryn.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
 	                <img src="images/codes.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-                </div>
 
+                </div>
+				-->
                 <div class="jqrcode">
 	                <div id="test1"></div>
-	                <!--<div id="test2"></div></br>
-	                <div id="test3"></div>
-	                <div id="test4"></div></br>-->
             	</div>
 		</div>
 
 	 <script>
-
-	 function QRgenerate(string){
-	                $(document).ready(function() {
-				    $('#test1').qrcode({width: 400,height: 400, text: string});
-				});
-	 }
-	 function QRwipe(){
-	 	$("#test1").empty();
-	 }
-	 function tester(str){
-	 	for(i=0;i<str.length-10;i=i+10){
-	 		//setTimeout(function() { QRgenerate(str.slice(i,i+10));}, i+1);		
-	 		QRgenerate(str.slice(i,i+10));
-	 		QRwipe();
-	 		
-	 	}
-	 }
-	 
-	 tester(document.domain);
-	 
-	 /*
-	 setTimeout(function() { QRgenerate("123435234423431423423"); }, 1000);
-	 setTimeout(function() { QRgenerate("1234352"); }, 1200);
-	 setTimeout(function() { QRgenerate("4423431423423"); }, 1400);
-	 setTimeout(function() { QRgenerate("123435234423431423423dsadfdksfsdnfjksdfnkjsdfhkjshdasoiqwjkldas"); }, 1600);
-	 setTimeout(function() { QRwipe(); }, 1900);
-	 */
-
+	  /*
+		 setTimeout(function() { QRgenerate("123435234423431423423"); }, 1000);
+		 setTimeout(function() { QRgenerate("1234352"); }, 1200);
+		 setTimeout(function() { QRgenerate("4423431423423"); }, 1400);
+		 setTimeout(function() { QRgenerate("123435234423431423423dsadfdksfsdnfjksdfnkjsdfhkjshdasoiqwjkldas"); }, 1600);
+		 setTimeout(function() { QRwipe(); }, 1900);
+		 */
+	
 	</script>
 	 <div>
         <label for="filePicker">Choose or drag a file:</label><br>
@@ -151,6 +130,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <textarea id="base64textarea" placeholder="Base64 will appear here" cols="50" rows="15"></textarea>
     </div>
     <script>
+	     function QRgenerate(string){
+		                $(document).ready(function() {
+					    $('#test1').qrcode({width: 400,height: 400, text: string});
+					});
+		 }
+		 function QRwipe(){
+		 	$("#test1").empty();
+		 }
+		 function tester(str){
+		 	for(i=0;i<str.length-10;i=i+10){
+		 		//setTimeout(function() { QRgenerate(str.slice(i,i+10));}, i+1);		
+		 		QRgenerate(str.slice(i,i+10));
+		 		//QRwipe();
+		 	}
+		 }
+		 
+		 
+		 
+		
+
 		var handleFileSelect = function(evt) {
 		var files = evt.target.files;
 		var file = files[0];
@@ -160,7 +159,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		    reader.onload = function(readerEvt) {
 		        var binaryString = readerEvt.target.result;
-		        document.getElementById("base64textarea").value = btoa(binaryString);
+		        var bString = btoa(binaryString);
+		        document.getElementById("base64textarea").value = bString;
+		        tester(bString);
 		    };
 
 		    reader.readAsBinaryString(file);
@@ -172,6 +173,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		} else {
 			alert('The File APIs are not fully supported in this browser.');
 		}
+
+
+
+
     </script>
     </div>
     <!--<div class="select">
