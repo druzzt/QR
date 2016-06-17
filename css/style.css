@@ -18,7 +18,7 @@ html, body {
 	height: 100%;
 	font-family: 'Arial Black', Gadget, sans-serif;
     }
-    
+
 h1,h2,h3,h4,h5,h6,a{
 	font-family: 'Righteous', sans-serif;
 }
@@ -123,12 +123,13 @@ a.navbar-brand span{
 /*-- //top-nav --*/
 /*-- banner --*/
 .banner{
-	background:url(../images/banner.gif) no-repeat 0px 0px;
+	background:url(../images/banner4.gif) no-repeat center center fixed;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
+	min-height: 100%;
 	min-height:100px;
 }
 .banner h3{
