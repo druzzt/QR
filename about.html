@@ -47,6 +47,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 <div class="navbar-header">
 <a class="navbar-brand" href="index.html">Optical data channel<span>Cross-Device</span></a>
 </div>
+<button onclick="startSTOPrecording()">QRseeker</button>
 <div class="top-nav">
 <nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 <h3>Menu</h3>
@@ -172,6 +173,7 @@ setTimeout(function() { QRwipe(); }, 1900);
 <div>
 <textarea id="base64textarea" placeholder="Base64 will appear here" cols="25" rows="1"></textarea>
 </div>
+
 
 <script>
 var meter = new FPSMeter(document.getElementById('sticky'), { theme: 'dark' });
@@ -390,7 +392,7 @@ asperiores repellat.</p>
 <!-- footer -->
 
 </div>
-<button onclick="startSTOPrecording()">Start/Stop QR-seeking</button>
+
 <script>
 function hideDisplay() {
 document.getElementById("vid").style.display = "none";
