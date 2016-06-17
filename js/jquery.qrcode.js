@@ -20,9 +20,11 @@
 			var qrcode	= new QRCode(options.typeNumber, options.correctLevel);
 			qrcode.addData(options.text);
 			qrcode.make();
-
+			var fps  = document.getElementById('fps');
+			var avgDelay = 0, lastDraw = new Date;
 			// create canvas element
 			var canvas	= document.createElement('canvas');
+
 			canvas.width	= options.width;
 			canvas.height	= options.height;
 			var ctx		= canvas.getContext('2d');
@@ -33,10 +35,17 @@
 
 			// draw in the canvas
 			for( var row = 0; row < qrcode.getModuleCount(); row++ ){
+				var now = new Date;
+				var delay = now - lastDraw;
+				avgDelay += (delay - avgDelay) / 10;
+				lastDraw = now;
 				for( var col = 0; col < qrcode.getModuleCount(); col++ ){
 					ctx.fillStyle = qrcode.isDark(row, col) ? "#000000" : "#ffffff";
 					ctx.fillRect( col*tileW, row*tileH, tileW, tileH );  
-				}	
+				}
+				setInterval(function(){
+						fps.innerHTML = (1000/avgDelay).toFixed(1) + " fps";
+					},2000);	
 			}
 			// return just built canvas
 			return canvas;
