@@ -41,9 +41,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="sticky">This div will stick to the top</div>
 </section>
 <script>
-$(window).scroll(function(){
+$(document).scroll(function(){
   var sticky = $('.sticky'),
-      scroll = $(window).scrollTop();
+      scroll = $(document).scrollTop();
 
   if (scroll >= 100) sticky.addClass('fixed');
   else sticky.removeClass('fixed');
@@ -145,7 +145,7 @@ $(window).scroll(function(){
         <h1>Base64 encoded version</h1>
         <textarea id="base64textarea" placeholder="Base64 will appear here" cols="50" rows="15"></textarea>
     </div>
-    <p id="fps">?? fps</p>
+    <!--<p id="fps">?? fps</p>-->
     <script>
     	var meter = new FPSMeter({ theme: 'dark' });
 	     function QRgenerate(string){
