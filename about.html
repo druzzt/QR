@@ -485,12 +485,13 @@ function stop(){
 videoSelect.onchange = start;
 
 start();
-
+var recording = 1;
 function startSTOPrecording(){
-	if(window.stream){
-		start();
-	}else{
+	if(recording==1){
 		stop();
+		recording=0;
+	}else{
+		start();
 	}
 }
 </script>
