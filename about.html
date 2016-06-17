@@ -47,7 +47,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 <div class="navbar-header">
 <a class="navbar-brand" href="index.html">Optical data channel<span>Cross-Device</span></a>
 </div>
-<button onclick="startSTOPrecording()">QRseeker</button>
+
 <div class="top-nav">
 <nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 <h3>Menu</h3>
@@ -477,23 +477,13 @@ sourceId: videoSource
 };
 navigator.getUserMedia(constraints, successCallback, errorCallback);
 }
-function stop(){
-	window.stream.stop();
-}
+
 
 //audioSelect.onchange = start;
 videoSelect.onchange = start;
 
 start();
-var recording = 1;
-function startSTOPrecording(){
-	if(recording==1){
-		stop();
-		recording=0;
-	}else{
-		start();
-	}
-}
+
 </script>
 
 <div class="footer">
