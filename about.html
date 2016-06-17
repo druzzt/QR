@@ -390,6 +390,7 @@ asperiores repellat.</p>
 <!-- footer -->
 
 </div>
+<button onclick="startSTOPrecording()">Start/Stop QR-seeking</button>
 <script>
 function hideDisplay() {
 document.getElementById("vid").style.display = "none";
@@ -479,16 +480,20 @@ navigator.getUserMedia(constraints, successCallback, errorCallback);
 videoSelect.onchange = start;
 
 start();
+
+function startSTOPrecording(){
+	start();
+}
 </script>
 
 <div class="footer">
 <div class="container">
 <p>&copy;All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
 </div>
-</div>
+<!--</div>
 <audio controls autoplay>
-<!-- <source src="thundersM.mp3" type="audio/mpeg">-->
-</audio>
+<! - - <source src="thundersM.mp3" type="audio/mpeg"> - - >
+</audio>-->
 <!-- //footer -->
 </body>
 </html>
