@@ -7,25 +7,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript">
-        var host = "druzzt.github.io/QR";
-        if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
+<script type="text/javascript">
+var host = "druzzt.github.io/QR";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+window.location.protocol = "https";
+</script>
 <title>Cross-Device optical data channel. HOMEPAGE @ arkadiuszlewandowski</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-    function hideURLbar(){ window.scrollTo(0,1); }
-    var loc = window.location.href+'';
-    if (loc.indexOf('http://')==0){
-        window.location.href = loc.replace('http://','https://');
-    }
+function hideURLbar(){ window.scrollTo(0,1); }
+var loc = window.location.href+'';
+if (loc.indexOf('http://')==0){
+window.location.href = loc.replace('http://','https://');
+}
 </script>
 <script type="application/x-javascript">
-    addEventListener("load", function() { setTimeout(hideURLbar, 100); }, false);
-    function hideURLbar(){ window.scrollTo(0,1); }
+addEventListener("load", function() { setTimeout(hideURLbar, 100); }, false);
+function hideURLbar(){ window.scrollTo(0,1); }
 </script>
 
 <!-- //for-mobile-apps -->
@@ -41,457 +41,456 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/jquery.qrcode.js"></script>
 <script src="js/qrcode.js"></script>
 <script src="js/fpsmeter.js"></script>
-	<div id="sticky" class="sticky">
-	<div class="header">
-	<div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Optical data channel<span>Cross-Device</span></a>
-        </div>
-		<div class="top-nav">
-			<nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-				<h3>Menu</h3>
-					<a href="index.html">Home</a>
-					<a class="active" href="about.html">Tests</a>
-					<a href="gallery.html">Gallery</a>
-					<a href="codes.html">Short Codes</a>
-					<a href="contact.html">Contact</a>
-					<div class="footer-top">
-						<p>&copy;All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-					</div>
-					<ul class="social-icons social-icons-sub">
-						<li><a href="#" class="p"> </a></li>
-						<li><a href="#" class="facebook"> </a></li>
-						<li><a href="#" class="twitter"> </a></li>
-						<li><a href="#" class="in"> </a></li>
-					</ul>
-			</nav>
-			<div class="main buttonset">	
-                <button id="showRightPush"><img src="images/menu.png" alt=""/></button>
-			</div>
-					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-					<script src="js/classie.js"></script>
-						<script>
-							var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-							showRightPush = document.getElementById( 'showRightPush' ),
-							body = document.body;
-
-							showRightPush.onclick = function() {
-								classie.toggle( this, 'active' );
-								classie.toggle( body, 'cbp-spmenu-push-toleft' );
-								classie.toggle( menuRight, 'cbp-spmenu-open' );
-								disableOther( 'showRightPush' );
-							};
-
-							function disableOther( button ) {
-								if( button !== 'showRightPush' ) {
-									classie.toggle( showRightPush, 'disabled' );
-								}
-							}
-						</script>
-		</div>	
-		<div class="clearfix"> </div>
-	</div>	
-	</div>
-	</div>
-   <script type="text/javascript">
-		function findOffset(element) {
-		var top = 0, left = 0;
-
-		do {
-		top += element.offsetTop  || 0;
-		left += element.offsetLeft || 0;
-		element = element.offsetParent;
-		} while(element);
-
-		return {
-		top: top,
-		left: left
-		};
-		}
-
-		window.onload = function () {
-		var stickyHeader = document.getElementById('sticky');
-		var headerOffset = findOffset(stickyHeader);
-
-		window.onscroll = function() {
-		// body.scrollTop is deprecated and no longer available on Firefox
-		var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-		if (bodyScrollTop > headerOffset.top) {
-		  stickyHeader.classList.add('fixed');
-		} else {
-		  stickyHeader.classList.remove('fixed');
-		}
-		};
-		};
-   </script>
-    
-<!-- banner -->
-	<div class="banner">
-		<div class="container">
-			<h3>Testing spot</h3>
-                <!--
-                <div class="qrchannel">
-	                <img src="images/qrs.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-	                <img src="images/wyobraznia.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
-	                <img src="images/rozmaryn.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-	                <img src="images/codes.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-
-                </div>
-				-->
-                <div class="jqrcode">
-	                <div id="test1"></div>
-            	</div>
-		</div>
-
-	 <script>
-	  /*
-		 setTimeout(function() { QRgenerate("123435234423431423423"); }, 1000);
-		 setTimeout(function() { QRgenerate("1234352"); }, 1200);
-		 setTimeout(function() { QRgenerate("4423431423423"); }, 1400);
-		 setTimeout(function() { QRgenerate("123435234423431423423dsadfdksfsdnfjksdfnkjsdfhkjshdasoiqwjkldas"); }, 1600);
-		 setTimeout(function() { QRwipe(); }, 1900);
-		 */
-	
-	</script>
-	 <div>
-        <label for="filePicker">Choose or drag a file:</label><br>
-        <input type="file" id="filePicker">
-    </div>
-    <br>
-    <div>
-        <h1>Base64 encoded version</h1>
-        <textarea id="base64textarea" placeholder="Base64 will appear here" cols="25" rows="1"></textarea>
-    </div>
-    
-    <script>
-    	var meter = new FPSMeter(document.getElementById('sticky'), { theme: 'dark' });
-	     function QRgenerate(string){
-		                $(document).ready(function() {
-					    $('#test1').qrcode({width: 400,height: 400, text: string});
-					});
-		 }
-		 function QRwipe(){
-		 	$("#test1").empty();
-		 }
-		 function tester(str){
-		 	for(i=0;i<str.length-10;i=i+10){
-		 		//setTimeout(function() { QRgenerate(str.slice(i,i+10));}, i+1);		
-		 		QRgenerate(str.slice(i,i+10));
-		 		meter.tick();
-		 		//QRwipe();
-		 	}
-		 }
-		 
-		 
-		 
-		
-
-		var handleFileSelect = function(evt) {
-		var files = evt.target.files;
-		var file = files[0];
-
-		if (files && file) {
-		    var reader = new FileReader();
-
-		    reader.onload = function(readerEvt) {
-		        var binaryString = readerEvt.target.result;
-		        var bString = btoa(binaryString);
-		        document.getElementById("base64textarea").value = bString;
-		        tester(bString);
-		    };
-
-		    reader.readAsBinaryString(file);
-		}
-		};
-
-		if (window.File && window.FileReader && window.FileList && window.Blob) {
-			document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
-		} else {
-			alert('The File APIs are not fully supported in this browser.');
-		}
-
-
-
-
-    </script>
-    </div>
-    <!--<div class="select">
-        <label for="audioSource">Audio source: </label><select id="audioSource"></select>
-    </div>-->
-    
- 
-<!-- //banner -->
-<!-- banner-bottom -->
-	<!-- <div id="about" class="banner-bottom">
-		<div class="container">
-			<h3>Welcome To Ice Berg !</h3>
-			<p class="ex ever">To take a trivial example, which of us ever undertakes.</p>
-			<div class="banner-bottom-grids">
-				<div class="col-md-4 banner-bottom-grid">
-					<div class="banner-bottom-grid-rel">
-						<p>01.</p>
-						<div class="banner-bottom-grid-rel-pos">
-							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-								voluptatibus maiores alias consequatur aut perferendis doloribus 
-								asperiores repellat.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 banner-bottom-grid">
-					<div class="banner-bottom-grid-rel">
-						<p>02.</p>
-						<div class="banner-bottom-grid-rel-pos">
-							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-								voluptatibus maiores alias consequatur aut perferendis doloribus 
-								asperiores repellat.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 banner-bottom-grid">
-					<div class="banner-bottom-grid-rel">
-						<p>03.</p>
-						<div class="banner-bottom-grid-rel-pos">
-							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-								voluptatibus maiores alias consequatur aut perferendis doloribus 
-								asperiores repellat.</p>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>-->
-<!-- //banner-bottom -->
-<!-- features
-	<div class="features">	
-		<div class="container">
-			<div class="features-grids">
-				<div class="features-grid-left">
-					<h1></h1>
-					<h2></h2>
-					<p></p>
-					<ul class="social-icons">
-						<li><a href="#" class="p"> </a></li>
-						<li><a href="#" class="facebook"> </a></li>
-						<li><a href="#" class="twitter"> </a></li>
-						<li><a href="#" class="in"> </a></li>
-					</ul>
-				</div>
-				<div class="features-grid-right">
-					<div class="features-grid-right-text">
-						<h4></h4>
-						<p></p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>			
-		</div>
-	</div> -->
-<!-- //features -->
-<!-- team
-	<div class="team">
-		<div class="container">
-			<h3>Meet Our Team</h3>
-			<p class="ex">To take a trivial example, which of us ever undertakes.</p>
-			<section class="main">
-			
-				<ul class="ch-grid">
-					<li>
-						<div class="ch-item">				
-							<div class="ch-info">
-								<div class="ch-info-front ch-img-1"></div>
-								<div class="ch-info-back">
-									<h3>Prad Pitt</h3>
-									<p>Duis aute irure dolor.<a href="#">Member</a></p>
-								</div>	
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item">
-							<div class="ch-info">
-								<div class="ch-info-front ch-img-2"></div>
-								<div class="ch-info-back">
-									<h3>Randy Flow</h3>
-									<p>Duis aute irure dolor.<a href="#">Manager</a></p>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item">
-							<div class="ch-info">
-								<div class="ch-info-front ch-img-3"></div>
-								<div class="ch-info-back">
-									<h3>Ronald Lee</h3>
-									<p>Duis aute irure dolor.<a href="#">Member</a></p>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item">
-							<div class="ch-info">
-								<div class="ch-info-front ch-img-4"></div>
-								<div class="ch-info-back">
-									<h3>Laura Vaon</h3>
-									<p>Duis aute irure dolor.<a href="#">Member</a></p>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-				
-			</section>
-		</div>
-	</div> -->
-<!-- //team -->
-<!-- important
-	<div class="important">
-		<div class="container">
-			<h3>Some Important Points <span>About Us</span></h3>
-			<p class="ex us">To take a trivial example, which of us ever undertakes.</p>
-			<div class="important-grid">
-				<div class="col-md-6 important-grid-left">
-					<ul>
-						<li><a href="#">recusandae aut perferendis</a></li>
-						<li><a href="#">voluptatibus maiores alias</a></li>
-						<li><a href="#">molestiae non recusandae</a></li>
-						<li><a href="#">alias consequatur voluptates</a></li>
-						<li><a href="#">tenetur a sapiente delectus</a></li>
-						<li><a href="#">earum rerum hic tenetur</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6 important-grid-right">
-					<ul>
-						<li><a href="#">recusandae aut perferendis</a></li>
-						<li><a href="#">voluptatibus maiores alias</a></li>
-						<li><a href="#">molestiae non recusandae</a></li>
-						<li><a href="#">alias consequatur voluptates</a></li>
-						<li><a href="#">tenetur a sapiente delectus</a></li>
-						<li><a href="#">earum rerum hic tenetur</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div> -->
-<!-- //important -->
-<!-- footer -->
-<!-- VIDEO CONTAINER FOR QR RECORDING -->
+<div id="sticky" class="sticky">
+	<!-- VIDEO CONTAINER FOR QR RECORDING -->
 <span>
 <div id="vid">
-    <video autoplay></video>
+<video autoplay></video>
 </div>
 
 
 <div id="selector">
-    <div class="select">
-        <label for="videoSource">Video source: </label><select id="videoSource"></select>
-    </div>
+<div class="select">
+<label for="videoSource">Video source: </label><select id="videoSource"></select>
+</div>
 </div>
 </span>
+<div class="header">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="index.html">Optical data channel<span>Cross-Device</span></a>
 </div>
-    <script>
-        function hideDisplay() {
-            document.getElementById("vid").style.display = "none";
-        }
-    function hasGetUserMedia() {
-        return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
-                  navigator.mozGetUserMedia || navigator.msGetUserMedia);
-    }
-    
-    if (hasGetUserMedia()) {
-        console.log("Supporting getUserMedia");
-    } else {
-        console.log("getUserMedia() is not supported in this browser");
-        hideDisplay();
-    }
-    hasGetUserMedia();
-        </script>
+<div class="top-nav">
+<nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+<h3>Menu</h3>
+<a href="index.html">Home</a>
+<a class="active" href="about.html">Tests</a>
+<a href="gallery.html">Gallery</a>
+<a href="codes.html">Short Codes</a>
+<a href="contact.html">Contact</a>
+<div class="footer-top">
+<p>&copy;All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+</div>
+<ul class="social-icons social-icons-sub">
+<li><a href="#" class="p"> </a></li>
+<li><a href="#" class="facebook"> </a></li>
+<li><a href="#" class="twitter"> </a></li>
+<li><a href="#" class="in"> </a></li>
+</ul>
+</nav>
+<div class="main buttonset">	
+<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+</div>
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script src="js/classie.js"></script>
 <script>
-    'use strict';
-    var videoElement = document.querySelector('video');
-    // var audioSelect = document.querySelector('select#audioSource');
-    var videoSelect = document.querySelector('select#videoSource');
-    navigator.getUserMedia = navigator.getUserMedia ||
-    navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-    function gotSources(sourceInfos) {
-        for (var i = 0; i !== sourceInfos.length; ++i) {
-            var sourceInfo = sourceInfos[i];
-            var option = document.createElement('option');
-            option.value = sourceInfo.id;
-            //if (sourceInfo.kind === 'audio') {
-            //  option.text = sourceInfo.label || 'microphone ';// +
-            //(audioSelect.length + 1);
-            //audioSelect.appendChild(option);
-            //    } else
-            if (sourceInfo.kind === 'video') {
-                option.text = sourceInfo.label || 'camera ' + (videoSelect.length + 1);
-                videoSelect.appendChild(option);
-            } else {
-                console.log('Some other kind of source: ', sourceInfo);
-            }
-        }
-    }
+var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+showRightPush = document.getElementById( 'showRightPush' ),
+body = document.body;
+
+showRightPush.onclick = function() {
+classie.toggle( this, 'active' );
+classie.toggle( body, 'cbp-spmenu-push-toleft' );
+classie.toggle( menuRight, 'cbp-spmenu-open' );
+disableOther( 'showRightPush' );
+};
+
+function disableOther( button ) {
+if( button !== 'showRightPush' ) {
+classie.toggle( showRightPush, 'disabled' );
+}
+}
+</script>
+</div>	
+<div class="clearfix"> </div>
+</div>	
+</div>
+</div>
+<script type="text/javascript">
+function findOffset(element) {
+var top = 0, left = 0;
+
+do {
+top += element.offsetTop  || 0;
+left += element.offsetLeft || 0;
+element = element.offsetParent;
+} while(element);
+
+return {
+top: top,
+left: left
+};
+}
+
+window.onload = function () {
+var stickyHeader = document.getElementById('sticky');
+var headerOffset = findOffset(stickyHeader);
+
+window.onscroll = function() {
+// body.scrollTop is deprecated and no longer available on Firefox
+var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+if (bodyScrollTop > headerOffset.top) {
+stickyHeader.classList.add('fixed');
+} else {
+stickyHeader.classList.remove('fixed');
+}
+};
+};
+</script>
+
+<!-- banner -->
+<div class="banner">
+<div class="container">
+<h3>Testing spot</h3>
+<!--
+<div class="qrchannel">
+<img src="images/qrs.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+<img src="images/wyobraznia.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
+<img src="images/rozmaryn.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+<img src="images/codes.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</div>
+-->
+<div class="jqrcode">
+<div id="test1"></div>
+</div>
+</div>
+
+<script>
+/*
+setTimeout(function() { QRgenerate("123435234423431423423"); }, 1000);
+setTimeout(function() { QRgenerate("1234352"); }, 1200);
+setTimeout(function() { QRgenerate("4423431423423"); }, 1400);
+setTimeout(function() { QRgenerate("123435234423431423423dsadfdksfsdnfjksdfnkjsdfhkjshdasoiqwjkldas"); }, 1600);
+setTimeout(function() { QRwipe(); }, 1900);
+*/
+
+</script>
+<div>
+<input type="file" id="filePicker">
+</div>
+<br>
+<div>
+<textarea id="base64textarea" placeholder="Base64 will appear here" cols="25" rows="1"></textarea>
+</div>
+
+<script>
+var meter = new FPSMeter(document.getElementById('sticky'), { theme: 'dark' });
+function QRgenerate(string){
+$(document).ready(function() {
+$('#test1').qrcode({width: 400,height: 400, text: string});
+});
+}
+function QRwipe(){
+$("#test1").empty();
+}
+function tester(str){
+for(i=0;i<str.length-10;i=i+10){
+//setTimeout(function() { QRgenerate(str.slice(i,i+10));}, i+1);		
+QRgenerate(str.slice(i,i+10));
+meter.tick();
+//QRwipe();
+}
+}
+
+
+
+
+
+var handleFileSelect = function(evt) {
+var files = evt.target.files;
+var file = files[0];
+
+if (files && file) {
+var reader = new FileReader();
+
+reader.onload = function(readerEvt) {
+var binaryString = readerEvt.target.result;
+var bString = btoa(binaryString);
+document.getElementById("base64textarea").value = bString;
+tester(bString);
+};
+
+reader.readAsBinaryString(file);
+}
+};
+
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
+} else {
+alert('The File APIs are not fully supported in this browser.');
+}
+
+
+
+
+</script>
+</div>
+<!--<div class="select">
+<label for="audioSource">Audio source: </label><select id="audioSource"></select>
+</div>-->
+
+
+<!-- //banner -->
+<!-- banner-bottom -->
+<!-- <div id="about" class="banner-bottom">
+<div class="container">
+<h3>Welcome To Ice Berg !</h3>
+<p class="ex ever">To take a trivial example, which of us ever undertakes.</p>
+<div class="banner-bottom-grids">
+<div class="col-md-4 banner-bottom-grid">
+<div class="banner-bottom-grid-rel">
+<p>01.</p>
+<div class="banner-bottom-grid-rel-pos">
+<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+voluptatibus maiores alias consequatur aut perferendis doloribus 
+asperiores repellat.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 banner-bottom-grid">
+<div class="banner-bottom-grid-rel">
+<p>02.</p>
+<div class="banner-bottom-grid-rel-pos">
+<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+voluptatibus maiores alias consequatur aut perferendis doloribus 
+asperiores repellat.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 banner-bottom-grid">
+<div class="banner-bottom-grid-rel">
+<p>03.</p>
+<div class="banner-bottom-grid-rel-pos">
+<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+voluptatibus maiores alias consequatur aut perferendis doloribus 
+asperiores repellat.</p>
+</div>
+</div>
+</div>
+<div class="clearfix"> </div>
+</div>
+</div>
+</div>-->
+<!-- //banner-bottom -->
+<!-- features
+<div class="features">	
+<div class="container">
+<div class="features-grids">
+<div class="features-grid-left">
+<h1></h1>
+<h2></h2>
+<p></p>
+<ul class="social-icons">
+<li><a href="#" class="p"> </a></li>
+<li><a href="#" class="facebook"> </a></li>
+<li><a href="#" class="twitter"> </a></li>
+<li><a href="#" class="in"> </a></li>
+</ul>
+</div>
+<div class="features-grid-right">
+<div class="features-grid-right-text">
+<h4></h4>
+<p></p>
+</div>
+</div>
+<div class="clearfix"> </div>
+</div>			
+</div>
+</div> -->
+<!-- //features -->
+<!-- team
+<div class="team">
+<div class="container">
+<h3>Meet Our Team</h3>
+<p class="ex">To take a trivial example, which of us ever undertakes.</p>
+<section class="main">
+
+<ul class="ch-grid">
+<li>
+<div class="ch-item">				
+<div class="ch-info">
+<div class="ch-info-front ch-img-1"></div>
+<div class="ch-info-back">
+<h3>Prad Pitt</h3>
+<p>Duis aute irure dolor.<a href="#">Member</a></p>
+</div>	
+</div>
+</div>
+</li>
+<li>
+<div class="ch-item">
+<div class="ch-info">
+<div class="ch-info-front ch-img-2"></div>
+<div class="ch-info-back">
+<h3>Randy Flow</h3>
+<p>Duis aute irure dolor.<a href="#">Manager</a></p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="ch-item">
+<div class="ch-info">
+<div class="ch-info-front ch-img-3"></div>
+<div class="ch-info-back">
+<h3>Ronald Lee</h3>
+<p>Duis aute irure dolor.<a href="#">Member</a></p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="ch-item">
+<div class="ch-info">
+<div class="ch-info-front ch-img-4"></div>
+<div class="ch-info-back">
+<h3>Laura Vaon</h3>
+<p>Duis aute irure dolor.<a href="#">Member</a></p>
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+</section>
+</div>
+</div> -->
+<!-- //team -->
+<!-- important
+<div class="important">
+<div class="container">
+<h3>Some Important Points <span>About Us</span></h3>
+<p class="ex us">To take a trivial example, which of us ever undertakes.</p>
+<div class="important-grid">
+<div class="col-md-6 important-grid-left">
+<ul>
+<li><a href="#">recusandae aut perferendis</a></li>
+<li><a href="#">voluptatibus maiores alias</a></li>
+<li><a href="#">molestiae non recusandae</a></li>
+<li><a href="#">alias consequatur voluptates</a></li>
+<li><a href="#">tenetur a sapiente delectus</a></li>
+<li><a href="#">earum rerum hic tenetur</a></li>
+</ul>
+</div>
+<div class="col-md-6 important-grid-right">
+<ul>
+<li><a href="#">recusandae aut perferendis</a></li>
+<li><a href="#">voluptatibus maiores alias</a></li>
+<li><a href="#">molestiae non recusandae</a></li>
+<li><a href="#">alias consequatur voluptates</a></li>
+<li><a href="#">tenetur a sapiente delectus</a></li>
+<li><a href="#">earum rerum hic tenetur</a></li>
+</ul>
+</div>
+<div class="clearfix"> </div>
+</div>
+</div>
+</div> -->
+<!-- //important -->
+<!-- footer -->
+
+</div>
+<script>
+function hideDisplay() {
+document.getElementById("vid").style.display = "none";
+}
+function hasGetUserMedia() {
+return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
+navigator.mozGetUserMedia || navigator.msGetUserMedia);
+}
+
+if (hasGetUserMedia()) {
+console.log("Supporting getUserMedia");
+} else {
+console.log("getUserMedia() is not supported in this browser");
+hideDisplay();
+}
+hasGetUserMedia();
+</script>
+<script>
+'use strict';
+var videoElement = document.querySelector('video');
+// var audioSelect = document.querySelector('select#audioSource');
+var videoSelect = document.querySelector('select#videoSource');
+navigator.getUserMedia = navigator.getUserMedia ||
+navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+function gotSources(sourceInfos) {
+for (var i = 0; i !== sourceInfos.length; ++i) {
+var sourceInfo = sourceInfos[i];
+var option = document.createElement('option');
+option.value = sourceInfo.id;
+//if (sourceInfo.kind === 'audio') {
+//  option.text = sourceInfo.label || 'microphone ';// +
+//(audioSelect.length + 1);
+//audioSelect.appendChild(option);
+//    } else
+if (sourceInfo.kind === 'video') {
+option.text = sourceInfo.label || 'camera ' + (videoSelect.length + 1);
+videoSelect.appendChild(option);
+} else {
+console.log('Some other kind of source: ', sourceInfo);
+}
+}
+}
 
 if (typeof MediaStreamTrack === 'undefined' ||
-    typeof MediaStreamTrack.getSources === 'undefined') {
-    console.log("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
-    alert("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
-    document.getElementById("selector").style.display= "none";
+typeof MediaStreamTrack.getSources === 'undefined') {
+console.log("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
+alert("This browser does not support MediaStreamTrack.\n\nTry Chrome.");
+document.getElementById("selector").style.display= "none";
 } else {
-    alert(" Twoja przegladarka prosi teraz o dostęp do kamery (w pasku wprowadzania linków).\n Twoj obraz nigdzie nie jest przesylany. \n Sluzy on jedynie do przetwarzania QR kodow wewnatrz Twojej przegladarki.");
-    MediaStreamTrack.getSources(gotSources);
+alert(" Twoja przegladarka prosi teraz o dostęp do kamery (w pasku wprowadzania linków).\n Twoj obraz nigdzie nie jest przesylany. \n Sluzy on jedynie do przetwarzania QR kodow wewnatrz Twojej przegladarki.");
+MediaStreamTrack.getSources(gotSources);
 }
 
 function successCallback(stream) {
-    window.stream = stream; // make stream available to console
-    videoElement.src = window.URL.createObjectURL(stream);
-    videoElement.play();
+window.stream = stream; // make stream available to console
+videoElement.src = window.URL.createObjectURL(stream);
+videoElement.play();
 }
 
 function errorCallback(error) {
-    console.log('navigator.getUserMedia error: ', error);
+console.log('navigator.getUserMedia error: ', error);
 }
 
 function start() {
-    if (window.stream) {
-        videoElement.src = null;
-        window.stream.stop();
-    }
-    //var audioSource = audioSelect.value;
-    var videoSource = videoSelect.value;
-    var constraints = {
-        //audio: {
-        //  optional: [{
-        //           sourceId: audioSource
-        //         }]
-        //},
-        video: {
-            optional: [{
-                       sourceId: videoSource
-                       }]
-        }
-    };
-    navigator.getUserMedia(constraints, successCallback, errorCallback);
+if (window.stream) {
+videoElement.src = null;
+window.stream.stop();
+}
+//var audioSource = audioSelect.value;
+var videoSource = videoSelect.value;
+var constraints = {
+//audio: {
+//  optional: [{
+//           sourceId: audioSource
+//         }]
+//},
+video: {
+optional: [{
+sourceId: videoSource
+}]
+}
+};
+navigator.getUserMedia(constraints, successCallback, errorCallback);
 }
 
 //audioSelect.onchange = start;
 videoSelect.onchange = start;
 
 start();
-    </script>
+</script>
 
-	<div class="footer">
-		<div class="container">
-			<p>&copy;All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-		</div>
-	</div>
-    <audio controls autoplay>
-       <!-- <source src="thundersM.mp3" type="audio/mpeg">-->
-    </audio>
+<div class="footer">
+<div class="container">
+<p>&copy;All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+</div>
+</div>
+<audio controls autoplay>
+<!-- <source src="thundersM.mp3" type="audio/mpeg">-->
+</audio>
 <!-- //footer -->
 </body>
 </html>
