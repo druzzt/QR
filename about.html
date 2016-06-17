@@ -459,7 +459,7 @@ console.log('navigator.getUserMedia error: ', error);
 function start() {
 if (window.stream) {
 videoElement.src = null;
-//window.stream.stop();
+window.stream.stop();
 }
 //var audioSource = audioSelect.value;
 var videoSource = videoSelect.value;
