@@ -123,14 +123,14 @@ a.navbar-brand span{
 /*-- //top-nav --*/
 /*-- banner --*/
 .banner{
-	background:url(../images/banner4.gif)  fixed;
+	background:url(../images/banner4.gif) no-repeat center center fixed;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	height: 100%;
-	width: 100%;
+	min-height: 100%;
+	min-height:100px;
 }
 .banner h3{
 	text-transform:capitalize;
