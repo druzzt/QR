@@ -6,7 +6,7 @@
   else root.QCodeDecoder = factory(qrcode);
 }(this, function (qrcode) {
 
-'use strict';
+//'use strict';
 
 /**
  * Constructor for QCodeDecoder
