@@ -236,7 +236,7 @@ setTimeout(function() { QRwipe(); }, 1900);
 
 <script>
 var meter = new FPSMeter(document.getElementById('sticky'), { theme: 'dark' });
-function QRgenerate(string, string2){
+function QRgenerate(string){
 $(document).ready(function() {
 $('#test1').qrcode({width: 450,height: 450, text: string});
 //$('#test2').qrcode({width: 600, height: 600, text: string2});
@@ -248,9 +248,9 @@ setTimeout(function(){
     }, 0)
 }
 function tester(str){
-for(i=0;i<str.length-10;i=i+5){
+for(i=0;i<str.length-10;i=i+10){
 //setTimeout(function() { QRgenerate(str.slice(i,i+10));}, i+1);
-QRgenerate(str.slice(i,i+5), str.slice(i+5,i+10));
+QRgenerate(str.slice(i,i+10));
 meter.tick();
 //sleep(900);
 //QRwipe();
