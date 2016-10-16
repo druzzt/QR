@@ -63,7 +63,7 @@
 				.css("width", options.width+"px")
 				.css("height", options.height+"px")
 				.css("border", "10px")
-				.css("border-collapse", "collapse")
+				.css("border-collapse", "separate")
 				.css('background-color', "#ffffff");
 		  
 			// compute tileS percentage
