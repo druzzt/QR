@@ -288,15 +288,15 @@ alert('The File APIs are not fully supported in this browser.');
 <a id="download" download="qr.png">Download QRs</a>
 
 <script type="text/javascript">
-function download() {
+
     html2canvas(document.getElementById('test1'), {
       onrendered: function(canvas) {
           document.body.appendChild(canvas);
 
      }
   });
-}
-document.getElementById('download').addEventListener('click', download, true)
+
+//document.getElementById('download').addEventListener('click', download, true)
 </script>
 </div>
 <!--<div class="select">
