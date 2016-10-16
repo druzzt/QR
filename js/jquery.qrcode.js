@@ -62,7 +62,7 @@
 			var $table	= $('<table></table>')
 				.css("width", options.width+"px")
 				.css("height", options.height+"px")
-				.css("border", "0px")
+				.css("border", "5px")
 				.css("border-collapse", "collapse")
 				.css('background-color', "#ffffff");
 		  
