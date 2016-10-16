@@ -240,13 +240,19 @@ $('#test1').qrcode({width: 400,height: 400, text: string});
 });
 }
 function QRwipe(){
-$("#test1").empty();
+setTimeout(function(){ 
+
+        //alert('hello');
+        $("#test1").empty();
+    }, 700)
+
 }
 function tester(str){
 for(i=0;i<str.length-10;i=i+10){
 //setTimeout(function() { QRgenerate(str.slice(i,i+10));}, i+1);		
 QRgenerate(str.slice(i,i+10));
 meter.tick();
+sleep(900);
 QRwipe();
 }
 }
