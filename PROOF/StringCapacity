@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Proof</title>
+</head>
+<body>
+
+<h1> String Capacity proof for buffer overflows</h1>
+<script src="https://gist.github.com/druzzt/5f874a7d457a5f29728d6f0dfc35c0ba.js"></script>
+</br>
+
+<h2>Gist</h2>
+<a href="https://gist.github.com/druzzt/5f874a7d457a5f29728d6f0dfc35c0ba">RAW FILE</a>
+
+</body>
+</html>
